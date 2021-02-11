@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-   
-<section class="Container-Calc">
+
+   <!-- <section class="Container-Calc">
    <h1 class="TITTLE">Calculator</h1>
 
    <div class="Calc">
@@ -18,43 +20,82 @@
       <input type="text" name="field" id="field" class="field" value='0'>
 
       <div class="ContainerBTN">
-         <button class="btnADD" value="CLEAR" onclick="clearField()">C</button>
-         <button class="btnADD calculate" disabled>-</button><br>
-         <!-- FIRST LINE -->
-         <button class="btnADD" id="n1" onclick="InsertNumber(this)" value="1">1</button>
-         <button class="btnADD" id="n2" onclick="InsertNumber(this)" value="2">2</button>
-         <button class="btnADD" id="n3" onclick="InsertNumber(this)" value="3">3</button>
-         <button class="btnADD Operator" onclick="InsertOperator(this)"  value="/">/</button><br>
-        <!-- SECOND LINE -->
-        <button class="btnADD" id="n4" onclick="InsertNumber(this)" value="4">4</button>
+          0 LINE -->
+   <!-- <button class="btnADD" value="CLEAR" onclick="clearField()">C</button>
+         <button class="btnADD" id="0" id="n0" onclick="InsertNumber(this)" value="0">0</button>
+         <button class="btnADD Operator" onclick="InsertDot(this)"  value=".">.</button><br> -->
+   <!-- FIRST LINE -->
+
+   <!-- <button class="btnADD Operator" onclick="InsertOperator(this)"  value="/">/</button><br> -->
+   <!-- SECOND LINE -->
+   <!-- <button class="btnADD" id="n4" onclick="InsertNumber(this)" value="4">4</button>
         <button class="btnADD" id="n5" onclick="InsertNumber(this)" value="5">5</button>
         <button class="btnADD" id="n6" onclick="InsertNumber(this)" value="6">6</button>
-        <button class="btnADD Operator"  onclick="InsertOperator(this)"  value="*">*</button><br>
-         <!-- THIRD LINE -->
-         <button class="btnADD" id="n7" onclick="InsertNumber(this)" value="7">7</button>
-         <button class="btnADD" id="n8" onclick="InsertNumber(this)" value="8">8</button>
-         <button class="btnADD" id="n9" onclick="InsertNumber(this)" value="9">9</button>
-         <button class="btnADD Operator" onclick="InsertOperator(this)" value="-">-</button><br>
-         <!-- FOURTH LINE  -->
-         <button class="calculate btnADD" onclick='Calculate()' >Calculate</button>
-         <button class="btnADD Operator" onclick="InsertOperator(this)"  value="+">+</button><br>
+        <button class="btnADD Operator"  onclick="InsertOperator(this)"  value="*">*</button><br> -->
+   <!-- THIRD LINE -->
+   <!-- <button class="btnADD" id="n1" onclick="InsertNumber(this)" value="1">1</button>
+         <button class="btnADD" id="n2" onclick="InsertNumber(this)" value="2">2</button>
+         <button class="btnADD" id="n3" onclick="InsertNumber(this)" value="3">3</button>
+         <button class="btnADD Operator" onclick="InsertOperator(this)" value="-">-</button><br> -->
+   <!-- FOURTH LINE  -->
+   <!-- <button class="calculate btnADD" onclick='Calculate()' >Calculate</button>
+         <button class="btnADD Operator" onclick="InsertOperator(this)"  value="+">+</button><br> -->
 
-      </div>
+   <!-- </div>
 
    </div>
 
    <br>
-</section>
+</section>  -->
 
-<footer>
-   <div>
-      <span>SIMPLE CALCULATE</span> <br>
-      <span><b>antoniomarcosstorm@gmail.com</b></span>
-   </div>
-</footer>
-    
 
-<script src="/app.js"></script>
+   <section class="Container-Calc">
+      <h1 class="TITTLE">Calculator</h1>
+
+      <div class="Calc">
+
+         <input type="text" name="field" id="field" class="field" value='0'>
+
+         <div class="ContainerBTN">
+            <!-- 0 LINE -->
+            <button class="btnADD clear" value="CLEAR" onclick="clearField()">C</button>
+            <button class="btnADD Operator" onclick="InsertOperator(this)" value="/">/</button><br>
+            <!-- FIRST LINE -->
+            <button class="btnADD" id="n7" onclick="InsertOperator(this)" value="7">7</button>
+            <button class="btnADD" id="n8" onclick="InsertOperator(this)" value="8">8</button>
+            <button class="btnADD" id="n9" onclick="InsertOperator(this)" value="9">9</button>
+            <button class="btnADD Operator" onclick="InsertOperator(this)" value="*">*</button><br>
+            <!-- SECOND LINE -->
+            <button class="btnADD" id="n4" onclick="InsertNumber(this)" value="4">4</button>
+            <button class="btnADD" id="n5" onclick="InsertNumber(this)" value="5">5</button>
+            <button class="btnADD" id="n6" onclick="InsertNumber(this)" value="6">6</button>
+            <button class="btnADD Operator" onclick="InsertOperator(this)" value="-">-</button><br>
+            <!-- THIRD LINE -->
+            <button class="btnADD" id="n1" onclick="InsertNumber(this)" value="1">1</button>
+            <button class="btnADD" id="n2" onclick="InsertNumber(this)" value="2">2</button>
+            <button class="btnADD" id="n3" onclick="InsertNumber(this)" value="3">3</button>
+            <button class="btnADD Operator" onclick="InsertOperator(this)" value="+">+</button><br>
+            <!-- FOURTH LINE  -->
+            <button class="btnADD zero" id="n0" onclick="InsertNumber(this)" value="0">0</button>
+            <button class="btnADD Operator" onclick="InsertDot(this)"  value=".">.</button>
+            <button class="calculate btnADD" onclick='Calculate()'>=</button>
+         </div>
+
+
+      </div>
+
+   </section>
+
+   <footer>
+      <div>
+         <span>SIMPLE CALCULATE</span> <br>
+         <span><b>antoniomarcosstorm@gmail.com</b></span>
+      </div>
+   </footer>
+
+
+   <script src="/src/app.js"></script>
 
 </body>
+
 </html>

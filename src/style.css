@@ -42,7 +42,11 @@ body{
     transition: 0.5s;
 }
 
-.calculate{
+.zero{
+    width: 126px;
+}
+
+.clear{
     width: 188px;
 }
 

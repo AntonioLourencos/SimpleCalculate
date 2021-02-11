@@ -30,6 +30,24 @@ function InsertOperator(elementId){
     }
 }
 
+function InsertDot(elementId){
+
+      //Variable Field insert operator
+
+      var inputvalueto = document.getElementById("field");
+
+     //If the field is empty or with an error it does not work but if it is not adding a value (elementId)
+
+     if(inputvalueto.value == 0 || inputvalueto.value  == "Syntax error"){
+
+        inputvalueto.value = 0;
+
+    }else{
+        inputvalueto.value += elementId.textContent;
+    }
+
+}
+
 function clearField(){
 
     //Variable Field clear
